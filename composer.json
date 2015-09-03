@@ -1,0 +1,16 @@
+{
+  "name": "bendani/php-common/google-image-service",
+  "autoload": {
+    "psr-4": {
+      "Bendani\\PhpCommon\\GoogleImageService\\": "src"
+    }
+  },
+  "require": {
+    "illuminate/routing": "~4.0",
+    "illuminate/support": "~4.0",
+    "katzgrau/klogger": "1.0.*",
+    "phpunit/phpunit": "4.0.*",
+    "mockery/mockery": "0.9.*",
+    "phpunit/phpunit-selenium": ">=1.2"
+  }
+}
