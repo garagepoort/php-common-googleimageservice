@@ -25,11 +25,7 @@ class GoogleImageServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-//        $this->package('bendani/php-common/login-service', 'common-login');
-//        $this->package('bendani/php-common/google-image-service', null, __DIR__.'/../');
         $this->package('bendani/php-common/google-image-service');
-
-//        $view = View::make('common-login::login-form');
 
         View::addNamespace('bendani/php-common/google-image-service', __DIR__.'/../views');
     }
