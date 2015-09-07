@@ -30,7 +30,7 @@ class GoogleImageServiceProvider extends ServiceProvider
 
 //        $view = View::make('common-login::login-form');
 
-//        View::addNamespace('bendani/php-common/google-image-service', __DIR__.'/../views');
+        View::addNamespace('bendani/php-common/google-image-service', __DIR__.'/../views');
     }
 
 
