@@ -12,9 +12,9 @@
     var loader;
     var imageUrlInput;
 
-    function executeGoogleSearch(searchString, contentDiv, imageUrl) {
-        contentDivId = contentDiv;
-        imageUrlInput = imageUrl;
+    function executeGoogleSearch(searchString) {
+        contentDivId = {{ $contentDivId }};
+        imageUrlInput = {{ $imageUrlInput }};
 
         loader = $('#' + contentDivId + ' > :nth-child(1)');
         googleImageSearchTable = $('#' + contentDivId + ' > :nth-child(2)');
