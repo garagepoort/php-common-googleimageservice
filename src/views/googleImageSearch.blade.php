@@ -5,7 +5,6 @@
 </div>
 <div id="branding"  style="float: left;"></div><br />
 <input id={{ $imageUrlInput }} name={{ $imageUrlInput }} hidden>
-{{ HTML::script('assets/js/other/googleImageSearch.js'); }}
 
 <script type="text/javascript">
     var contentDivId;
