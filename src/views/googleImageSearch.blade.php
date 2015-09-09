@@ -14,7 +14,7 @@
         var loader;
         var imageUrlInput;
 
-        function executeGoogleSearch(searchString) {
+        var executeGoogleSearch = function(searchString) {
             contentDivId = '{{ $contentDivId }}';
             imageUrlInput = '{{ $imageUrlInput }}';
 
