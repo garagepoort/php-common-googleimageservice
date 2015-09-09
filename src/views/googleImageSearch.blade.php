@@ -7,6 +7,7 @@
 <input id="{{ $imageUrlInput }}" name="{{ $imageUrlInput }}" hidden>
 
 <script type="text/javascript">
+    var executeGoogleSearch;
 
     $(function () {
         var contentDivId;
@@ -14,7 +15,7 @@
         var loader;
         var imageUrlInput;
 
-        var executeGoogleSearch = function(searchString) {
+        executeGoogleSearch = function(searchString) {
             contentDivId = '{{ $contentDivId }}';
             imageUrlInput = '{{ $imageUrlInput }}';
 
