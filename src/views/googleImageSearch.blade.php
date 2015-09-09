@@ -1,10 +1,10 @@
-<div id={{ $contentDivId }}>
+<div id="{{ $contentDivId }}">
     {{ HTML::image('images/ajax-loader.gif', 'loader', array('class'=>'googleSearchLoader')) }}
     <table class="google-image-search-table" hidden>
     </table>
 </div>
 <div id="branding" style="float: left;"></div><br/>
-<input id={{ $imageUrlInput }} name={{ $imageUrlInput }} hidden>
+<input id="{{ $imageUrlInput }}" name="{{ $imageUrlInput }}" hidden>
 
 <script type="text/javascript">
 
@@ -15,8 +15,8 @@
         var imageUrlInput;
 
         function executeGoogleSearch(searchString) {
-            contentDivId = {{ $contentDivId }};
-            imageUrlInput = {{ $imageUrlInput }};
+            contentDivId = '{{ $contentDivId }}';
+            imageUrlInput = '{{ $imageUrlInput }}';
 
             loader = $('#' + contentDivId + ' > :nth-child(1)');
             googleImageSearchTable = $('#' + contentDivId + ' > :nth-child(2)');
@@ -26,8 +26,8 @@
 
             //imageSearch.execute(searchString);
 
-            var cx = {{ Config::get("GIS::googleImageCx") }};
-            var key = {{ Config::get("GIS::googleImageKey") }};
+            var cx = '{{ Config::get("GIS::googleImageCx") }}';
+            var key = '{{ Config::get("GIS::googleImageKey") }}';
             $.get('https://www.googleapis.com/customsearch/v1?cx=' + cx + '&key=' + key + '&searchType=image&imgSize=medium&alt=json&q=' + searchString, function (data) {
                 results = data.items;
 
