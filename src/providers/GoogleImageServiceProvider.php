@@ -26,7 +26,7 @@ class GoogleImageServiceProvider extends ServiceProvider
     {
         $this->package('bendani/php-common/google-image-service', 'GIS', __DIR__.'/../');
 
-        View::addNamespace('bendani/php-common/google-image-service', __DIR__.'/../views');
+        View::addNamespace('GIS', __DIR__.'/../views');
     }
 
 

@@ -25,8 +25,8 @@
 
         //imageSearch.execute(searchString);
 
-        var cx = {{ Config::get("bendani/php-common/google-image-service::googleImageCx") }};
-        var key = {{ Config::get("bendani/php-common/google-image-service::googleImageKey") }};
+        var cx = {{ Config::get("GIS::googleImageCx") }};
+        var key = {{ Config::get("GIS::googleImageKey") }};
         $.get('https://www.googleapis.com/customsearch/v1?cx=' + cx + '&key=' + key + '&searchType=image&imgSize=medium&alt=json&q=' + searchString, function (data) {
             results = data.items;
 
